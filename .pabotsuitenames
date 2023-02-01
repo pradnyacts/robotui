@@ -1,0 +1,6 @@
+datasources:6105b93a1282faec34b5b7193ff89f893e74d390
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:3f12872bb10b6b37707f63d31dd1b67eb74e12af
+--suite Suites.Datadriven1
+--suite Suites.Datadriven2

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.13 on win32)" generated="20230102 11:09:06.687" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginTest" source="C:\Users\pradn\PycharmProjects\robotui\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Logintest" line="12">
+<kw name="open my browser" library="LoginKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230102 11:09:06.937" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<status status="PASS" starttime="20230102 11:09:06.936" endtime="20230102 11:09:12.247"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230102 11:09:12.247" endtime="20230102 11:09:12.400"/>
+</kw>
+<status status="PASS" starttime="20230102 11:09:06.935" endtime="20230102 11:09:12.400"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230102 11:09:13.405" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230102 11:09:12.400" endtime="20230102 11:09:13.405"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20230102 11:09:13.406" endtime="20230102 11:09:13.596"/>
+</kw>
+<kw name="Enter Username" library="LoginKeyword">
+<arg>${user}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginusername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230102 11:09:13.600" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20230102 11:09:13.597" endtime="20230102 11:09:13.887"/>
+</kw>
+<status status="PASS" starttime="20230102 11:09:13.597" endtime="20230102 11:09:13.888"/>
+</kw>
+<kw name="Enter Password" library="LoginKeyword">
+<arg>${pwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginpassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230102 11:09:13.890" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230102 11:09:13.889" endtime="20230102 11:09:14.015"/>
+</kw>
+<status status="PASS" starttime="20230102 11:09:13.888" endtime="20230102 11:09:14.016"/>
+</kw>
+<kw name="Click Signin" library="LoginKeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_sigin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230102 11:09:14.017" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<msg timestamp="20230102 11:09:15.143" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230102 11:09:15.143" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="submit" name="submit" value="Submit" style="background-color: #FACB00;border: 1px solid black;font-family:MS Sans Serif;font-size:15px;"&gt; is not clickable at point (583, 556). Other element would receive the click: &lt;iframe src="https://ccpa-manager.privacymanager.io/latest/index.html#/notice" id="ccpa-consent-notice" class="faktor-iframe-wrapper" frameborder="0" scrolling="yes" style="min-height: 220px; max-height: 350px; width: 100%; left: 0px; bottom: 0px; position: fixed; display: block; z-index: 2147483647; box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 30px 5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px; height: 212px;"&gt;&lt;/iframe&gt;
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0070F243]
+	(No symbol) [0x00697FD1]
+	(No symbol) [0x0058D04D]
+	(No symbol) [0x005C28B9]
+	(No symbol) [0x005C08CC]
+	(No symbol) [0x005BE4CB]
+	(No symbol) [0x005BD164]
+	(No symbol) [0x005B32A6]
+	(No symbol) [0x005D858C]
+	(No symbol) [0x005B2BFF]
+	(No symbol) [0x005D8804]
+	(No symbol) [0x005EC9EB]
+	(No symbol) [0x005D8386]
+	(No symbol) [0x005B163C]
+	(No symbol) [0x005B269D]
+	GetHandleVerifier [0x009A9A22+2655074]
+	GetHandleVerifier [0x0099CA24+2601828]
+	GetHandleVerifier [0x007B8C0A+619850]
+	GetHandleVerifier [0x007B7830+614768]
+	(No symbol) [0x006A05FC]
+	(No symbol) [0x006A5968]
+	(No symbol) [0x006A5A55]
+	(No symbol) [0x006B051B]
+	BaseThreadInitThunk [0x764A7D69+25]
+	RtlInitializeExceptionChain [0x77CCBB9B+107]
+	RtlClearBits [0x77CCBB1F+191]
+</msg>
+<status status="FAIL" starttime="20230102 11:09:14.016" endtime="20230102 11:09:15.193"/>
+</kw>
+<status status="FAIL" starttime="20230102 11:09:14.016" endtime="20230102 11:09:15.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230102 11:09:15.194" endtime="20230102 11:09:15.194"/>
+</kw>
+<kw name="Verify sucessful login" library="LoginKeyword">
+<status status="NOT RUN" starttime="20230102 11:09:15.194" endtime="20230102 11:09:15.194"/>
+</kw>
+<kw name="close my browser" library="LoginKeyword">
+<status status="NOT RUN" starttime="20230102 11:09:15.194" endtime="20230102 11:09:15.194"/>
+</kw>
+<status status="FAIL" starttime="20230102 11:09:06.935" endtime="20230102 11:09:15.195">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="submit" name="submit" value="Submit" style="background-color: #FACB00;border: 1px solid black;font-family:MS Sans Serif;font-size:15px;"&gt; is not clickable at point (583, 556). Other element would receive the click: &lt;iframe src="https://ccpa-manager.privacymanager.io/latest/index.html#/notice" id="ccpa-consent-notice" class="faktor-iframe-wrapper" frameborder="0" scrolling="yes" style="min-height: 220px; max-height: 350px; width: 100%; left: 0px; bottom: 0px; position: fixed; display: block; z-index: 2147483647; box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 30px 5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px; height: 212px;"&gt;&lt;/iframe&gt;
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0070F243]
+	(No symbol) [0x00697FD1]
+	(No symbol) [0x0058D04D]
+	(No symbol) [0x005C28B9]
+	(No symbol) [0x005C08CC]
+	(No symbol) [0x005BE4CB]
+	(No symbol) [0x005BD164]
+	(No symbol) [0x005B32A6]
+	(No symbol) [0x005D858C]
+	(No symbol) [0x005B2BFF]
+	(No symbol) [0x005D8804]
+	(No symbol) [0x005EC9EB]
+	(No symbol) [0x005D8386]
+	(No symbol) [0x005B163C]
+	(No symbol) [0x005B269D]
+	GetHandleVerifier [0x009A9A22+2655074]
+	GetHandleVerifier [0x0099CA24+2601828]
+	GetHandleVerifier [0x007B8C0A+619850]
+	GetHandleVerifier [0x007B7830+614768]
+	(No symbol) [0x006A05FC]
+	(No symbol) [0x006A5968]
+	(No symbol) [0x006A5A55]
+	(No symbol) [0x006B051B]
+	BaseThreadInitThunk [0x764A7D69+25]
+	RtlInitializeExceptionChain [0x77CCBB9B+107]
+	RtlClearBits [0x77CCBB1F+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230102 11:09:06.689" endtime="20230102 11:09:15.197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

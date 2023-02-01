@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.9 on win32)" generated="20221223 13:25:46.456" rpa="false" schemaversion="3">
+<suite id="s1" name="Input" source="C:\Users\pradn\PycharmProjects\robotui\TestCases\input.robot">
+<test id="s1-t1" name="Testinginputbox" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221223 13:25:46.680" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20221223 13:25:46.679" endtime="20221223 13:25:48.539"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221223 13:25:48.540" endtime="20221223 13:25:48.680"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>nopCommerce demo store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221223 13:25:48.687" level="INFO">Page title is 'nopCommerce demo store'.</msg>
+<status status="PASS" starttime="20221223 13:25:48.681" endtime="20221223 13:25:48.687"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221223 13:25:48.689" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20221223 13:25:48.687" endtime="20221223 13:25:49.026"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${"email_txt}</var>
+<arg>id:Email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20221223 13:25:49.028" level="INFO">${"email_txt} = id:Email</msg>
+<status status="PASS" starttime="20221223 13:25:49.026" endtime="20221223 13:25:49.028"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${"email_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221223 13:25:49.121" level="INFO">Element 'id:Email' is displayed.</msg>
+<status status="PASS" starttime="20221223 13:25:49.028" endtime="20221223 13:25:49.121"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${"email_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221223 13:25:49.121" endtime="20221223 13:25:49.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${"email_txt}</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221223 13:25:49.161" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20221223 13:25:49.160" endtime="20221223 13:25:49.303"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221223 13:25:54.305" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221223 13:25:49.305" endtime="20221223 13:25:54.305"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${"email_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221223 13:25:54.305" endtime="20221223 13:25:54.332"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221223 13:25:57.346" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221223 13:25:54.333" endtime="20221223 13:25:57.346"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221223 13:25:57.346" endtime="20221223 13:25:59.568"/>
+</kw>
+<status status="PASS" starttime="20221223 13:25:46.678" endtime="20221223 13:25:59.568"/>
+</test>
+<status status="PASS" starttime="20221223 13:25:46.458" endtime="20221223 13:25:59.569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input">Input</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
